@@ -9,9 +9,14 @@ galaxy_info:
   platforms:
     - name: Fedora
       versions:
-        - 24
+        - 31
+        - 32
+    - name: Ubuntu
+      versions:
+        - bionic
   galaxy_tags:
     - development
+  role_name: libvirt
 
 dependencies: []
   
