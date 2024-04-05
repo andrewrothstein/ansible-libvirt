@@ -1,0 +1,11 @@
+---
+libvirt_os_pkgs:
+  - virt-install
+  - libvirt-daemon-config-network
+  - libvirt-daemon-kvm
+  - virt-manager
+  - virt-viewer
+  - guestfs-browser
+  - libguestfs-tools
+  - python-libguestfs
+  - virt-top
