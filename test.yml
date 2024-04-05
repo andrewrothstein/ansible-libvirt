@@ -1,4 +1,14 @@
 ---
-- hosts: all
-  roles:
-    - { role: '.' }
+- name: Testing andrewrothstein.libvirt
+  hosts: all
+  tasks:
+    - name: Installing andrewrothstein.kubectl
+      ansible.builtin.include_role:
+        name: '{{ playbook_dir }}'
+    - name: Executing 'virsh --version'
+      ansible.builtin.command: virsh --version
+      changed_when: false
+      register: libvirt_test_output
+    - name: Output from 'virsh --version'
+      ansible.builtin.debug:
+        msg: '{{ libvirt_test_output.stdout }}'

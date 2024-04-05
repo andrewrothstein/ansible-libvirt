@@ -1,6 +1,5 @@
 ---
 libvirt_os_pkgs:
-  - qemu-kvm
   - libvirt-dev
   - virtinst
   - virt-viewer

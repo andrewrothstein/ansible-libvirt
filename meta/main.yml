@@ -1,22 +1,28 @@
 ---
 galaxy_info:
   author: Andrew Rothstein
-  description: role to install libvirt and related tools
   company: BlackRock
-  license:
-    - MIT
-  min_ansible_version: 2.0
-  platforms:
-    - name: Fedora
-      versions:
-        - 31
-        - 32
-    - name: Ubuntu
-      versions:
-        - bionic
+  description: role to install libvirt and related tools
   galaxy_tags:
     - development
+  license: MIT
+  min_ansible_version: '2.0'
+  namespace: andrewrothstein
+  platforms:
+    - name: Debian
+      versions:
+        - bookworm
+        - bullseye
+    - name: EL
+      versions:
+        - '8'
+        - '9'
+    - name: Fedora
+      versions:
+        - '38'
+        - '39'
+    - name: Ubuntu
+      versions:
+        - focal
+        - jammy
   role_name: libvirt
-
-dependencies: []
-  
